@@ -1,0 +1,3 @@
+{
+  "extends": ["github>mashakir/renovate-config"]
+}
