@@ -3,11 +3,18 @@ variable "resource_group_name" {
 
 }
 variable "location" {
-  description = "Location of the resource group"
+  description = "location of the resource group"
 }
 variable "environment" {
   description = "Name of the environment"
 }
-variable "team" {
-  description = "Name of the team"
+variable "policy_scope_id" {
+  type        = string
+  description = "Scope ID where the policies should be assigned (management group or subscription)"
+  default     = "contoso-mg"
+}
+variable "scope_type" {
+  type        = string
+  description = "Type of scope for baseline: management_group | subscription."
+  default     = "management_group"
 }

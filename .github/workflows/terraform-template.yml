@@ -16,10 +16,6 @@ on:
         description: 'Name of the Environment'
         required: true
         type: "string"
-      team:
-        description: 'Name of the team'
-        required: true
-        type: "string"
       region:
         description: 'Name of the region where resources will be created'
         required: true
@@ -95,4 +91,4 @@ jobs:
 
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: terraform apply -auto-approve -var=resource_group_name=${{ inputs.resourceGroup }} -var=environment=${{ inputs.environment }} -var=team=$${{ inputs.team }} -var=location=${{ inputs.region}}
+      run: terraform apply -auto-approve -var=resource_group_name=${{ inputs.resourceGroup }} -var=environment=${{ inputs.environment }} -var=location=${{ inputs.region}}
