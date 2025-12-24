@@ -20,6 +20,10 @@ on:
         description: 'Name of the region where resources will be created'
         required: true
         type: "string"
+      team:
+        description: 'Name of the team responsible for the resources'
+        required: true
+        type: "string"
 
 jobs:
   terraform:
