@@ -1,5 +1,6 @@
 # Terraform
 [![Terraform-Development](https://github.com/NimbleDevOps/Terraform-cloud/actions/workflows/main.yml/badge.svg)](https://github.com/NimbleDevOps/Terraform-cloud/actions/workflows/main.yml)
+[![Super-Linter](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/mail.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## Overview
 
